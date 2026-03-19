@@ -1,0 +1,712 @@
+[
+    {
+        "id": 1,
+        "nome": "Resfenol C/20 Cápsulas (Gripe/Resfriado)",
+        "receita": false,
+        "categoria": "Medicamentos"
+    },
+    {
+        "id": 2,
+        "nome": "Amoxicilina 500mg (Antibiótico)",
+        "receita": true,
+        "categoria": "Medicamentos"
+    },
+    {
+        "id": 3,
+        "nome": "Lorasliv 10mg C/12 CPR (Antialérgico)",
+        "receita": false,
+        "categoria": "Medicamentos"
+    },
+    {
+        "id": 4,
+        "nome": "Dipirona Monoidratada 500mg",
+        "receita": false,
+        "categoria": "Medicamentos"
+    },
+    {
+        "id": 5,
+        "nome": "Fralda Baby Care Hiper Premium Tam G 60un",
+        "receita": false,
+        "categoria": "Infantil"
+    },
+    {
+        "id": 6,
+        "nome": "Fralda Geriátrica Bem Care Tam EG 26un",
+        "receita": false,
+        "categoria": "Adulto"
+    },
+    {
+        "id": 7,
+        "nome": "Energético Monster Original 473ml",
+        "receita": false,
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 8,
+        "nome": "Água Mineral Sem Gás 500ml (Copo)",
+        "receita": false,
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 9,
+        "nome": "Coca-Cola Lata 350ml",
+        "receita": false,
+        "categoria": "Bebidas"
+    },
+    {
+        "id": 10,
+        "nome": "Shampoo Clear Men Anticaspa 400ml",
+        "receita": false,
+        "categoria": "Higiene"
+    },
+    {
+        "id": 11,
+        "nome": "CREME NIVEA 56G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 12,
+        "nome": "AP BARBEAR",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 13,
+        "nome": "GILLETTE VENUS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 14,
+        "nome": "SENSITIVE C/2 UN",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 15,
+        "nome": "PROT LABIAL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 16,
+        "nome": "CARMED SORVETE KIT",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 17,
+        "nome": "ABS GERERIÁTRICO",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 18,
+        "nome": "DRY MASTERSOFT",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 20,
+        "nome": "HERBISSIMO 55G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 22,
+        "nome": "LOC HID NIVEA",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 23,
+        "nome": "MILK OU SOFT MILK",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 24,
+        "nome": "OLEO FARMAX 100 ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 25,
+        "nome": "ABS SYM NOITE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 26,
+        "nome": "E DIA SUAVE C/ABAS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 28,
+        "nome": "COND SEDA 325ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 29,
+        "nome": "SAB GRANADO 90G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 30,
+        "nome": "SH SEDA 325 ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 31,
+        "nome": "PENTEAR SEDA 300ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 32,
+        "nome": "PO DESCOLORANTE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 33,
+        "nome": "SUNLESS DOURA",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 34,
+        "nome": "PELOS 20G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 35,
+        "nome": "DES CR DOVE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 36,
+        "nome": "CREME SERUM 50G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 37,
+        "nome": "KIT ANASOL FPS50",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 38,
+        "nome": "200ML + ANASOL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 39,
+        "nome": "FACIAL FPS50 60ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 40,
+        "nome": "HASTES COT",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 41,
+        "nome": "J&J C/75 UND",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 42,
+        "nome": "HIDRATAÇÃO",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 43,
+        "nome": "CORPORAL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 44,
+        "nome": "VITAMINA E",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 45,
+        "nome": "PARA TODOS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 46,
+        "nome": "OS TIPOS DE PELE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 47,
+        "nome": "ALICATE MUNDIAL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 48,
+        "nome": "CUTICULA REF 522",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 49,
+        "nome": "CHOC GAROTO",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 50,
+        "nome": "CARIBE 28G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 51,
+        "nome": "SUCO TIAL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 52,
+        "nome": "KIDS 200ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 53,
+        "nome": "REFRIGERANTE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 54,
+        "nome": "LATA 350ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 56,
+        "nome": "ESM RISQUE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 57,
+        "nome": "DIAMOND GEL TOP",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 58,
+        "nome": "COAT FIXADOR 9,5ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 59,
+        "nome": "CHOC NESTLE 85G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 61,
+        "nome": "ROCHER T8",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 62,
+        "nome": "WAFER TRENTO",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 63,
+        "nome": "MINI BITES 40G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 64,
+        "nome": "ALGODAO BOLAS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 65,
+        "nome": "BEM CARE C/50G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 66,
+        "nome": "IDEAL 100ML",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 67,
+        "nome": "PANTOPE OLEO DE",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 68,
+        "nome": "MELALEUCA C/80G",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 69,
+        "nome": "CHOC NESTLE KIT",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 70,
+        "nome": "KAT 41,5G (SABORES)",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 71,
+        "nome": "BARRA DE CEREAL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 72,
+        "nome": "TRIO 20G (SABORES)",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 75,
+        "nome": "3 UNID POR",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 76,
+        "nome": "PARA PÉS RACHADOS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 77,
+        "nome": "BACTERICIDA",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 78,
+        "nome": "CABELO MAIS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 79,
+        "nome": "FORTE E SAUDÁVEL",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 80,
+        "nome": "POLITABS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 81,
+        "nome": "FEMME C/60 CPS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    },
+    {
+        "id": 82,
+        "nome": "HAIR C/60 CPS",
+        "categoria": "Geral",
+        "pausado": false,
+        "receita": false,
+        "validade": "Março/2026",
+        "promocional": false,
+        "imagem": "personagem.png"
+    }
+]

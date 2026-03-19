@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediu Chegou 🚀 | Matozinhos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #004a99; /* Azul Lucena */
+            --secondary: #0066cc;
+            --accent: #25d366; /* Verde WhatsApp */
+            --danger: #ff4444;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; margin: 0; padding-bottom: 220px; color: var(--dark); }
+
+        /* --- SPLASH SCREEN --- */
+        #splash {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 2000; transition: 0.8s;
+        }
+        .splash-logo { width: 150px; border-radius: 50%; box-shadow: var(--shadow); animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+        /* --- HEADER --- */
+        header { 
+            background: linear-gradient(135deg, var(--primary), var(--secondary)); 
+            color: white; padding: 25px 20px; text-align: center;
+            border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+        header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; }
+
+        /* --- BUSCA E FILTROS --- */
+        .search-area { padding: 20px; margin-top: -25px; }
+        #search-input { 
+            width: 100%; padding: 15px 25px; border-radius: 50px; border: none;
+            box-shadow: var(--shadow); font-size: 16px; outline: none;
+        }
+
+        .filtros { display: flex; overflow-x: auto; gap: 10px; padding: 10px 20px; scrollbar-width: none; }
+        .btn-filtro { 
+            background: white; border: none; padding: 10px 20px; border-radius: 20px;
+            white-space: nowrap; font-weight: 600; cursor: pointer; box-shadow: var(--shadow);
+            transition: 0.3s; color: var(--primary);
+        }
+        .btn-filtro.active { background: var(--primary); color: white; }
+
+        /* --- VITRINE --- */
+        .vitrine { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; padding: 15px; }
+        .card { 
+            background: white; border-radius: 18px; padding: 15px; text-align: center;
+            box-shadow: var(--shadow); transition: 0.3s; position: relative; border: 1px solid transparent;
+        }
+        .card:active { transform: scale(0.95); }
+        .card img { width: 70%; margin-bottom: 10px; border-radius: 50%; }
+        .card h3 { font-size: 14px; margin: 10px 0; height: 38px; overflow: hidden; color: #444; }
+        .badge-promo { position: absolute; top: 10px; left: 10px; background: var(--danger); color: white; padding: 4px 8px; border-radius: 10px; font-size: 10px; font-weight: bold; }
+
+        .btn-add { 
+            background: #eef2ff; color: var(--primary); border: none; 
+            padding: 10px; border-radius: 12px; width: 100%; font-weight: bold; cursor: pointer;
+        }
+        .btn-add.active { background: var(--primary); color: white; }
+
+        /* --- CADASTRO E ENTREGA --- */
+        .container-checkout { background: white; margin: 15px; padding: 20px; border-radius: 18px; box-shadow: var(--shadow); display: none; }
+        .input-box { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 10px; font-size: 14px; }
+
+        /* --- FOOTER CARRINHO --- */
+        .footer-cart { 
+            position: fixed; bottom: 0; width: 100%; background: white; padding: 20px;
+            border-top-left-radius: 25px; border-top-right-radius: 25px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1); z-index: 1000; box-sizing: border-box;
+        }
+        .btn-finalizar { 
+            background: var(--accent); color: white; border: none; padding: 18px;
+            border-radius: 15px; width: 100%; font-size: 18px; font-weight: bold;
+            display: flex; justify-content: center; align-items: center; gap: 10px; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="splash">
+    <img src="personagem.png" class="splash-logo">
+    <h2 style="color: var(--primary);">Pediu Chegou 🚀</h2>
+    <p>Sua farmácia em um toque</p>
+</div>
+
+<header>
+    <h1>Pediu Chegou</h1>
+    <p style="opacity: 0.8; font-size: 14px;">Matozinhos - MG</p>
+</header>
+
+<div class="search-area">
+    <input type="text" id="search-input" placeholder="O que você procura hoje?" onkeyup="filtrar()">
+</div>
+
+<div class="filtros" id="filtros">
+    <button class="btn-filtro active" onclick="setCat('Tudo', this)">Tudo</button>
+    <button class="btn-filtro" onclick="setCat('Medicamentos', this)">💊 Medicamentos</button>
+    <button class="btn-filtro" onclick="setCat('Bebidas', this)">🥤 Bebidas</button>
+    <button class="btn-filtro" onclick="setCat('Higiene', this)">🧼 Higiene</button>
+</div>
+
+<div class="vitrine" id="vitrine"></div>
+
+<div class="container-checkout" id="checkout">
+    <h3 style="color: var(--primary); margin: 0 0 15px;">Finalizar Pedido</h3>
+    <input type="text" id="cliente_nome" class="input-box" placeholder="Seu Nome Completo">
+    <input type="text" id="cliente_tel" class="input-box" placeholder="WhatsApp (DDD)">
+    <select id="tipo_entrega" class="input-box" onchange="checkEntrega()">
+        <option value="Retirada">Vou retirar na Loja</option>
+        <option value="Entrega">Receber em Casa (Delivery)</option>
+    </select>
+    <input type="text" id="cliente_end" class="input-box" placeholder="Endereço de Entrega" style="display:none;">
+</div>
+
+<div class="footer-cart">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-weight: bold;">
+        <span>Itens Selecionados:</span>
+        <span id="contador">0</span>
+    </div>
+    <button class="btn-finalizar" onclick="enviarZap()">
+        <i class="fab fa-whatsapp"></i> ENVIAR PEDIDO
+    </button>
+</div>
+
+<script>
+    let produtos = [];
+    let carrinho = [];
+    let categoria = 'Tudo';
+
+    window.onload = () => {
+        setTimeout(() => document.getElementById('splash').classList.add('hidden'), 2500);
+        
+        // Recuperar cadastro salvo no celular do cliente
+        if(localStorage.getItem('pc_nome')) document.getElementById('cliente_nome').value = localStorage.getItem('pc_nome');
+        if(localStorage.getItem('pc_tel')) document.getElementById('cliente_tel').value = localStorage.getItem('pc_tel');
+        
+        carregar();
+    };
+
+    async function carregar() {
+        try {
+            const res = await fetch('produtos.json');
+            produtos = await res.json();
+            render();
+        } catch(e) { console.error("Erro ao carregar banco."); }
+    }
+
+    function render() {
+        const busca = document.getElementById('search-input').value.toLowerCase();
+        const ativos = produtos.filter(p => 
+            !p.pausado && 
+            (categoria === 'Tudo' || p.categoria === categoria) &&
+            (p.nome.toLowerCase().includes(busca))
+        );
+
+        document.getElementById('vitrine').innerHTML = ativos.map(p => `
+            <div class="card">
+                ${p.promocional ? '<span class="badge-promo">OFERTA</span>' : ''}
+                <img src="${p.imagem}">
+                <h3>${p.nome}</h3>
+                <button class="btn-add ${carrinho.some(c=>c.id===p.id)?'active':''}" onclick="toggle(${p.id})">
+                    ${carrinho.some(c=>c.id===p.id)?'REMOVER':'ADICIONAR'}
+                </button>
+            </div>
+        `).join('');
+    }
+
+    function toggle(id) {
+        const p = produtos.find(item => item.id === id);
+        if(carrinho.some(c => c.id === id)) carrinho = carrinho.filter(c => c.id !== id);
+        else carrinho.push(p);
+        
+        document.getElementById('contador').innerText = carrinho.length;
+        document.getElementById('checkout').style.display = carrinho.length > 0 ? 'block' : 'none';
+        render();
+    }
+
+    function setCat(cat, btn) {
+        categoria = cat;
+        document.querySelectorAll('.btn-filtro').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+    }
+
+    function checkEntrega() {
+        const mode = document.getElementById('tipo_entrega').value;
+        document.getElementById('cliente_end').style.display = mode === 'Entrega' ? 'block' : 'none';
+    }
+
+    function enviarZap() {
+        const nome = document.getElementById('cliente_nome').value;
+        const tel = document.getElementById('cliente_tel').value;
+        const entrega = document.getElementById('tipo_entrega').value;
+        const endereco = document.getElementById('cliente_end').value;
+
+        if(!nome || !tel) return alert("Por favor, preencha seu nome e telefone!");
+        
+        // SALVAR DADOS NO CELULAR PARA A PRÓXIMA VEZ
+        localStorage.setItem('pc_nome', nome);
+        localStorage.setItem('pc_tel', tel);
+
+        let msg = `*🛍️ NOVO PEDIDO - PEDIU CHEGOU*%0A%0A`;
+        msg += `*Cliente:* ${nome}%0A*WhatsApp:* ${tel}%0A*Tipo:* ${entrega}%0A`;
+        if(entrega === 'Entrega') msg += `*Endereço:* ${endereco}%0A`;
+        msg += `%0A*ITENS:*%0A${carrinho.map(i => "- " + i.nome).join('%0A')}`;
+
+        window.open(`https://wa.me/5531982466044?text=${msg}`);
+    }
+</script>
+</body>
+</html>
